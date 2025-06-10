@@ -1,0 +1,6 @@
+body { min-height: 100vh; display: flex; flex-direction: column; }
+footer { margin-top: auto; }
+.card { border-radius: 10px; }
+.btn { transition: all 0.3s; }
+.btn:hover { opacity: 0.9; }
+.list-group-item { display: flex; justify-content: space-between; align-items: center; }
