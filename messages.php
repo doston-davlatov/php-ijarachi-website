@@ -10,6 +10,7 @@ require_once './config.php';
 
 $db = new Database();
 
+// Masofiy misol: Xabarlar jadvali mavjud deb hisoblaymiz
 $messages = $db->select('messages', '*', 'user_id = ?', [$_SESSION['user']['id']], 'i');
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ $messages = $db->select('messages', '*', 'user_id = ?', [$_SESSION['user']['id']
     <title>Xabarlarim - Ijarachi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="bg-light">
     <?php include 'template/header.php'; ?>

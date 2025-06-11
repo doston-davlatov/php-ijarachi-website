@@ -51,7 +51,9 @@ if (isset($_GET['msg'])) {
                 <?php endif; ?>
 
                 <!-- Joriy sana va vaqt -->
-                <p class="text-center text-muted mb-4">Bugun: <?php echo date('l, F d, Y', strtotime('2025-06-11')); ?> (09:44 AM +05) <i class="fas fa-calendar-day"></i></p>
+                <p class="text-center text-muted mb-4">
+                    Bugun: <?php echo date('l, F d, Y'); ?> (<?php echo date('h:i A'); ?>) <i class="fas fa-calendar-day"></i>
+                </p>
 
                 <!-- Tez kirish knopkalari -->
                 <div class="row g-3 mb-4">
@@ -59,10 +61,10 @@ if (isset($_GET['msg'])) {
                         <a href="listings.php" class="btn btn-primary w-100"><i class="fas fa-list-ul"></i> Barcha E’lonlar</a>
                     </div>
                     <div class="col-md-4">
-                        <a href="add_listing.php" class="btn btn-success w-100"><i class="fas fa-plus"></i> Yangi E’lon Qo‘shish</a>
+                        <a href="add_listing_form.php" class="btn btn-success w-100"><i class="fas fa-plus"></i> Yangi E’lon Qo‘shish</a>
                     </div>
                     <div class="col-md-4">
-                        <a href="messages.php" class="btn btn-info w-100"><i class="fas fa-envelope"></i> Xabarlarim</a>
+                        <a href="my_listings.php" class="btn btn-info w-100"><i class="fas fa-bullhorn"></i> Xabarlarim</a>
                     </div>
                 </div>
 
@@ -89,11 +91,11 @@ if (isset($_GET['msg'])) {
                                     <li class="list-group-item">
                                         <?php echo htmlspecialchars($listing['title']); ?> - 
                                         <?php echo number_format($listing['price'], 2); ?> so'm
-                                        <a href="listings.php?edit=<?php echo $listing['id']; ?>" class="btn btn-sm btn-secondary float-end"><i class="fas fa-edit"></i></a>
+                                        <a href="add_listing_form.php?edit=<?php echo $listing['id']; ?>" class="btn btn-sm btn-secondary float-end"><i class="fas fa-edit"></i></a>
                                     </li>
                                 <?php endforeach; ?>
                             </ul>
-                            <a href="listings.php" class="btn btn-link mt-2"><i class="fas fa-eye"></i> Barchasini ko‘rish</a>
+                            <a href="my_listings.php" class="btn btn-link mt-2"><i class="fas fa-eye"></i> Barchasini ko‘rish</a>
                         <?php else: ?>
                             <p class="text-center">Hali hech qanday e’loningiz yo‘q. <i class="fas fa-exclamation-triangle"></i></p>
                         <?php endif; ?>

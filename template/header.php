@@ -9,7 +9,6 @@
                 <li class="nav-item"><a class="nav-link" href="listings.php">E’lonlar</a></li>
                 <li class="nav-item"><a class="nav-link" href="add_listing.php">E’lon Qo‘shish</a></li>
                 <li class="nav-item"><a class="nav-link" href="messages.php">Xabarlar</a></li>
-                <li class="nav-item"><a class="nav-link" href="logout/index.php">Chiqish</a></li>
             </ul>
         </div>
     </div>

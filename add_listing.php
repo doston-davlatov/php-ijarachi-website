@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_listing'])) {
     $category_id = $_POST['category_id'] ?? 1;
     $price = $_POST['price'] ?? 0.00;
     $location = trim($_POST['location'] ?? '');
-    $currency = $_POST['currency'] ?? 'UZS';
+    $currency = $_POST['currency'] ?? 'UZS' . ' (so‘m)';
 
     // Maydonlarni tekshirish
     if (empty($title) || empty($price)) {

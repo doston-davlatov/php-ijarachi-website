@@ -69,6 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Saqlash</button>
                         </form>
+                        <a style="background-color:red; color: white;" class="btn w-100 mt-2" href="logout/index.php">Chiqish</a>
                     </div>
                 </div>
             </div>
