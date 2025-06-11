@@ -1,6 +1,33 @@
-body { min-height: 100vh; display: flex; flex-direction: column; }
-footer { margin-top: auto; }
-.card { border-radius: 10px; }
-.btn { transition: all 0.3s; }
-.btn:hover { opacity: 0.9; }
-.list-group-item { display: flex; justify-content: space-between; align-items: center; }
+body { 
+    font-family: Arial, sans-serif; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+footer { 
+    margin-top: auto; 
+}
+.card { 
+    border-radius: 10px; 
+}
+.btn i { 
+    margin-right: 5px; 
+}
+.card-title i { 
+    margin-left: 5px; 
+}
+.list-group-item { 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.list-group-item i { 
+    margin-right: 5px; 
+}
+.btn-sm { 
+    margin-left: 5px; 
+}
+.btn:hover { 
+    opacity: 0.9; 
+}
